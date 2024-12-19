@@ -3,7 +3,7 @@ import DatePicker from './DatePicker'
 
 function HotelBook() {
   return (
-    <div className='w-64 bg-[#2e2b2c] p-5 absolute left-1/2 -bottom-48 -translate-x-1/2 text-white md:left-[70%] md:translate-x-0 lg:w-80 lg:p-10'>
+    <div className='w-64 bg-[#2e2b2c] p-5 absolute left-1/2 -bottom-48 -translate-x-1/2 text-white md:left-[60%] md:translate-x-0 lg:w-80 lg:p-10 lg:left-[70%]'>
       <h2 className='font-bellefair text-base lg:text-xl'>Check In</h2>
       <DatePicker />
       <h2 className='font-bellefair text-base lg:text-xl mt-4 lg:mt-8'>Check Out</h2>
