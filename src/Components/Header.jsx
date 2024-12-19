@@ -7,7 +7,7 @@ function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(true)
   return (
     <div>
-      <header class="w-full flex justify-between items-center py-5 px-2 md:px-10 lg:px-20 fixed top-0 left-0 z-[99] text-white">
+      <header class="w-full flex justify-between items-center py-5 px-2 md:px-10 lg:px-20 fixed top-0 left-0 bg-black/20 backdrop-blur-sm z-[99] text-white">
         <div class="flex items-center">
           <img alt="Montfarella Logo" class="w-9 md:w-12" src={Logo} />
           <div class="flex flex-col items-center">
