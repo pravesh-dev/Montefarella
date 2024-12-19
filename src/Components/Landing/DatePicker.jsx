@@ -13,13 +13,13 @@ function DatePicker() {
   const [date, setDate] = useState();
  
   return (
-    <div className="w-full relative">
+    <div className="w-full relative bg-[#3e3c3d]">
       <Popover placement="bottom">
         <PopoverHandler>
           <Input
             onChange={() => null}
             value={date ? format(date, "PPP") : ""}
-            className="font-poppins py-1 bg-[#3e3c3d] text-primary placeholder:text-primary border-none"
+            className="font-poppins py-1 text-primary placeholder:text-primary border-none outline-none bg-[#3e3c3d]"
             placeholder="Select a date"
           />
         </PopoverHandler>
