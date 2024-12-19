@@ -1,22 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import bgImage from '../../assets/Landing_page_imgs/bg-img.jpg'
+import star from '../../assets/Landing_page_imgs/star.svg';
+import { FaChevronLeft } from "react-icons/fa6";
+import { FaAngleRight } from "react-icons/fa6";
 
 function Hero() {
   return (
     <div className='relative'>
       <img
         alt="Hotel Room Background"
-        className="w-full h-screen object-cover brightness-75"
+        className="w-full h-screen object-cover"
         src={bgImage}
       />
       <div
-        className="absolute inset-0 flex flex-col justify-center items-start px-24 bg-black/40"
+        className="absolute inset-0 flex flex-col justify-center items-start px-24 bg-black/50"
       >
       <span className="w-[2px] h-24 bg-white/50 mt-12 mb-5"></span>
         <p className="text-[#C09569] text-lg font_2 tracking-[6px] -mb-2 font-poppins">
           BEST PLACE TO RELAX &amp; ENJOY
         </p>
-        <h1 className="text-[6rem] font-thin leading-tight mb-4 font-bellefair text-white">
+        <h1 className="text-[2rem] md:text-[6rem] font-thin leading-tight mb-4 font-bellefair text-white">
           Perfect Place to Enjoy <br/> Your Life
         </h1>
         <div className="flex items-center mb-10">
@@ -41,14 +44,14 @@ function Hero() {
             src="https://storage.googleapis.com/a1aa/image/PML4JiBUtrLgKlnKhj2t3Gzb1vXxch6wcPyHnQhaTW9AhFfJA.jpg"
             width="40"
           />
-          <div className="ml-5 flex flex-col gap-1">
-              <span className="font_2 text-white/80"> 4.8 Rated Around The World </span>
+          <div className="md:ml-5 flex flex-col gap-1">
+              <span className="font-poppins text-white/80"> 4.8 Rated Around The World </span>
               <div className="flex gap-1">
-                  <img src="star.svg" className="w-5" alt="" />
-                  <img src="star.svg" className="w-5" alt="" />
-                  <img src="star.svg" className="w-5" alt="" />
-                  <img src="star.svg" className="w-5" alt="" />
-                  <img src="star.svg" className="w-5" alt="" />
+                  <img src={star} className="w-5" alt="" />
+                  <img src={star} className="w-5" alt="" />
+                  <img src={star} className="w-5" alt="" />
+                  <img src={star} className="w-5" alt="" />
+                  <img src={star} className="w-5" alt="" />
                 </div>
             </div>
         </div>
@@ -56,12 +59,12 @@ function Hero() {
           <button
             className="w-12 h-12 text-xs flex items-center justify-center border-2 border-white/70 text-white/70 rounded-full"
           >
-            <i className="fas fa-chevron-left"> </i>
+            <FaChevronLeft />
           </button>
           <button
             className="w-12 h-12 text-xs flex items-center justify-center border-2 border-white/70 text-white/70 rounded-full"
           >
-            <i className="fas fa-chevron-right"> </i>
+            <FaAngleRight />
           </button>
         </div>
       </div>
