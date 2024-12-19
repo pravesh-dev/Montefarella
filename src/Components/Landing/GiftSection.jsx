@@ -59,6 +59,15 @@ function GiftSection() {
           <img src={images[currentImage]} className="w-full h-full object-cover" alt="Gift Card Image" />
         </div>
       </div>
+      <div className="w-full hidden md:flex justify-center gap-3 mt-5">
+      {
+        images.map((item, index)=>{
+          return (
+            <span key={index} className={`${index === currentImage ? 'bg-primary scale-125' : 'bg-white'} w-3 h-3 rounded-full duration-200`}></span>
+          )
+        })
+      }
+      </div>
     </div>
   );
 }
