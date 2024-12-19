@@ -13,14 +13,14 @@ function Hero() {
         src={bgImage}
       />
       <div
-        className="absolute inset-0 flex flex-col justify-center items-start px-24 bg-black/50"
+        className="absolute inset-0 flex flex-col justify-center items-start px-3 md:px-10 lg:px-24 bg-black/50"
       >
-      <span className="w-[2px] h-24 bg-white/50 mt-12 mb-5"></span>
-        <p className="text-[#C09569] text-lg font_2 tracking-[6px] -mb-2 font-poppins">
+        <span className="w-[2px] h-20 bg-white/50 md:mt-12 mb-10 md:mb-5"></span>
+        <p className="text-[#C09569] text-xs md:text-lg tracking-widest md:tracking-[6px] font-poppins mb-4">
           BEST PLACE TO RELAX &amp; ENJOY
         </p>
-        <h1 className="text-[2rem] md:text-[6rem] font-thin leading-tight mb-4 font-bellefair text-white">
-          Perfect Place to Enjoy <br/> Your Life
+        <h1 className="text-[2.2rem] md:text-[4rem] lg:text-[6rem] font-thin leading-tight mb-5 font-bellefair text-white">
+          Perfect Place to Enjoy <br /> Your Life
         </h1>
         <div className="flex items-center mb-10">
           <img
@@ -44,8 +44,8 @@ function Hero() {
             src="https://storage.googleapis.com/a1aa/image/PML4JiBUtrLgKlnKhj2t3Gzb1vXxch6wcPyHnQhaTW9AhFfJA.jpg"
             width="40"
           />
-          <div className="md:ml-5 flex flex-col gap-1">
-              <span className="font-poppins text-white/80"> 4.8 Rated Around The World </span>
+          <div className="ml-5 flex flex-col gap-1">
+              <span className="font-poppins text-white/80 text-xs md:text-base"> 4.8 Rated Around The World </span>
               <div className="flex gap-1">
                   <img src={star} className="w-5" alt="" />
                   <img src={star} className="w-5" alt="" />

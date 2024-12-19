@@ -17,7 +17,7 @@ function Header() {
             </span>
           </div>
         </div>
-        <nav class={`flex flex-col md:flex-row bg-neutral-900 md:bg-transparent w-80 py-20 gap-5 items-center fixed top-0 h-screen md:relative md:w-auto md:gap-6 lg:gap-16 md:h-auto md:py-0 ${isMenuOpen ? 'left-0' : '-left-full'} duration-150 font-poppins z-[99]`}>
+        <nav class={`flex flex-col md:flex-row bg-neutral-900 md:bg-transparent w-80 py-20 gap-5 items-center fixed top-0 h-screen md:static md:w-auto md:gap-6 lg:gap-16 md:h-auto md:py-0 ${isMenuOpen ? 'left-0' : '-left-full'} duration-150 font-poppins z-[99]`}>
           <Link
             class="w-full py-3 bg-[#c095691b] text-center nav_items active hover:text-[#C09569] text-[#C09569] tracking-[1px] border-b-2 border-[#c09569] md:w-auto md:py-0 md:bg-transparent md:border-none"
             to="/"
