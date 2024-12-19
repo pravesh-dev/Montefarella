@@ -13,13 +13,14 @@ function DatePicker() {
   const [date, setDate] = useState();
  
   return (
-    <div className="p-24">
+    <div className="w-full relative">
       <Popover placement="bottom">
         <PopoverHandler>
           <Input
-            label="Select a Date"
             onChange={() => null}
             value={date ? format(date, "PPP") : ""}
+            className="font-poppins py-1 bg-[#3e3c3d] text-primary placeholder:text-primary border-none"
+            placeholder="Select a date"
           />
         </PopoverHandler>
         <PopoverContent>
@@ -28,7 +29,7 @@ function DatePicker() {
             selected={date}
             onSelect={setDate}
             showOutsideDays
-            className="border-0"
+            className="border-0 p-1"
             classNames={{
               caption: "flex justify-center py-2 mb-4 relative items-center",
               caption_label: "text-sm font-medium text-gray-900",

@@ -3,6 +3,7 @@ import bgImage from '../../assets/Landing_page_imgs/bg-img.jpg'
 import star from '../../assets/Landing_page_imgs/star.svg';
 import { FaChevronLeft } from "react-icons/fa6";
 import { FaAngleRight } from "react-icons/fa6";
+import HotelBook from './HotelBook';
 
 function Hero() {
   return (
@@ -16,7 +17,7 @@ function Hero() {
         className="absolute inset-0 flex flex-col justify-center items-start px-3 md:px-10 lg:px-24 bg-black/50"
       >
         <span className="w-[2px] h-20 bg-white/50 md:mt-12 mb-10 md:mb-5"></span>
-        <p className="text-[#C09569] text-xs md:text-lg tracking-widest md:tracking-[6px] font-poppins mb-4">
+        <p className="text-primary text-xs md:text-lg tracking-widest md:tracking-[6px] font-poppins mb-4">
           BEST PLACE TO RELAX &amp; ENJOY
         </p>
         <h1 className="text-[2.2rem] md:text-[4rem] lg:text-[6rem] font-thin leading-tight mb-5 font-bellefair text-white">
@@ -25,21 +26,21 @@ function Hero() {
         <div className="flex items-center mb-10">
           <img
             alt="Reviewer 1"
-            className="w-10 h-10 rounded-full border-2 border-[#C09569] -mr-3"
+            className="w-10 h-10 rounded-full border-2 border-primary -mr-3"
             height="40"
             src="https://storage.googleapis.com/a1aa/image/FoS7fjUtcMXjECupS8BqUlgDDY0tna0oGFIJB26uhEYFCLeTA.jpg"
             width="40"
           />
           <img
             alt="Reviewer 2"
-            className="w-10 h-10 rounded-full border-2 border-[#C09569] -mr-3"
+            className="w-10 h-10 rounded-full border-2 border-primary -mr-3"
             height="40"
             src="https://storage.googleapis.com/a1aa/image/Wjf3Je0hJSilq0gVwIUjnCtfQD4YAdlN7jhmyRqWMEYQIs4nA.jpg"
             width="40"
           />
           <img
             alt="Reviewer 3"
-            className="w-10 h-10 rounded-full border-2 border-[#C09569]"
+            className="w-10 h-10 rounded-full border-2 border-primary"
             height="40"
             src="https://storage.googleapis.com/a1aa/image/PML4JiBUtrLgKlnKhj2t3Gzb1vXxch6wcPyHnQhaTW9AhFfJA.jpg"
             width="40"
@@ -68,6 +69,7 @@ function Hero() {
           </button>
         </div>
       </div>
+      <HotelBook/>
     </div>
   )
 }
