@@ -1,4 +1,5 @@
 import React from 'react'
+import bgImage from '../../assets/Landing_page_imgs/bg-img.jpg'
 
 function Hero() {
   return (
@@ -6,9 +7,7 @@ function Hero() {
       <img
         alt="Hotel Room Background"
         class="w-full h-screen object-cover brightness-75"
-        height="1080"
-        src="bg_img2.jpg"
-        width="1920"
+        src={bgImage}
       />
       <div
         class="absolute inset-0 flex flex-col justify-center items-start px-24 bg-black/40"
