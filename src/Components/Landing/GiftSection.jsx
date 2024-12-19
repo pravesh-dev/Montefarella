@@ -14,7 +14,7 @@ function GiftSection() {
   }, [currentImage, images.length]);
 
   return (
-    <div className="flex flex-col bg-[#2c2b2b] items-center w-full h-auto py-16 px-1 gap-2">
+    <section className="flex flex-col bg-[#2c2b2b] items-center w-full h-auto py-16 px-1 gap-2">
       <span className="w-[2px] inline-block h-16 bg-white/50 mb-4 md:mb-5"></span>
       <h2 className="font-poppins text-primary text-lg tracking-wider uppercase md:text-xl lg:text-2xl">
         Gift a Dream Stay
@@ -68,7 +68,7 @@ function GiftSection() {
         })
       }
       </div>
-    </div>
+    </section>
   );
 }
 

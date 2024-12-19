@@ -7,7 +7,7 @@ import HotelBook from './HotelBook';
 
 function Hero() {
   return (
-    <div className='relative'>
+    <section className='relative'>
       <img
         alt="Hotel Room Background"
         className="w-full h-screen object-cover"
@@ -70,7 +70,7 @@ function Hero() {
         </div>
       </div>
       <HotelBook/>
-    </div>
+    </section>
   )
 }
 
