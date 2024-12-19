@@ -5,8 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#C09569',
+      },
+      fontFamily: {
+        bellefair: [`bellefair`],
+        poppins: [`poppins`],
+        mulish: [`mulish`]
+      }
+    },
   },
   plugins: [],
 }
-

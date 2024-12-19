@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face{
+    font-family: bellefair;
+    src: url('./assets/Fonts/Bellefair/Bellefair-Regular.ttf');
+}
+@font-face{
+    font-family: poppins;
+    src: url('./assets/Fonts/Mulish/static/Mulish-Regular.ttf');
+}
+@font-face{
+    font-family: mulish;
+    src: url('./assets/Fonts/Poppins/Poppins-Regular.ttf');
+}
