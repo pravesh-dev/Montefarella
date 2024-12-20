@@ -2,6 +2,7 @@ import React from "react";
 import logo from '/logo.png'
 import { FaAngleRight } from "react-icons/fa6";
 import { FaTwitter, FaFacebookF, FaInstagram, FaPinterest, FaLinkedinIn } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -35,24 +36,24 @@ function Footer() {
         </h2>
         <ul className="space-y-2">
           <li>
-            <a href="#" className="hover:text-primary">
+            <Link to="/" className="hover:text-primary">
               HOME
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-primary">
+            <Link to="/about" className="hover:text-primary">
               ABOUT
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-primary">
+            <Link to="/booking" className="hover:text-primary">
               SERVICES
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-primary">
+            <Link to="#" className="hover:text-primary">
               ROOMS
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -81,21 +82,21 @@ function Footer() {
       <div className="text-center mb-8 flex items-center justify-center gap-4 md:justify-between">
         <span className="w-14 h-[1.5px] bg-white/50 md:w-60 lg:w-80 xl:w-[30rem]"></span>
         <div className="flex justify-center space-x-4">
-          <a href="#" className="text-gray-300 hover:text-primary border-2 border-gray-300 rounded-full p-1">
+          <Link to="#" className="text-gray-300 hover:text-primary border-2 border-gray-300 rounded-full p-1">
             <FaTwitter />
-          </a>
-          <a href="#" className="text-gray-300 hover:text-primary border-2 border-gray-300 rounded-full p-1">
+          </Link>
+          <Link to="#" className="text-gray-300 hover:text-primary border-2 border-gray-300 rounded-full p-1">
             <FaFacebookF />
-          </a>
-          <a href="#" className="text-gray-300 hover:text-primary border-2 border-gray-300 rounded-full p-1">
+          </Link>
+          <Link to="#" className="text-gray-300 hover:text-primary border-2 border-gray-300 rounded-full p-1">
             <FaInstagram />
-          </a>
-          <a href="#" className="text-gray-300 hover:text-primary border-2 border-gray-300 rounded-full p-1">
+          </Link>
+          <Link to="#" className="text-gray-300 hover:text-primary border-2 border-gray-300 rounded-full p-1">
             <FaPinterest />
-          </a>
-          <a href="#" className="text-gray-300 hover:text-primary border-2 border-gray-300 rounded-full p-1">
+          </Link>
+          <Link to="#" className="text-gray-300 hover:text-primary border-2 border-gray-300 rounded-full p-1">
             <FaLinkedinIn />
-          </a>
+          </Link>
         </div>
         <span className="w-14 h-[1.5px] bg-white/50 md:w-60 lg:w-80 xl:w-[30rem]"></span>
       </div>
@@ -104,12 +105,12 @@ function Footer() {
       <div className="text-center text-sm text-gray-500 md:flex items-center justify-between">
         <p>&copy; 2023 Imperial Grand Hotel. All Rights Reserved.</p>
         <div className="space-x-2 mt-2 md:mt-0 md:space-x-10">
-          <a href="#" className="hover:text-yellow-500">
+          <Link to="#" className="hover:text-yellow-500">
             Privacy Policy
-          </a>
-          <a href="#" className="hover:text-yellow-500">
+          </Link>
+          <Link to="#" className="hover:text-yellow-500">
             Terms of Use
-          </a>
+          </Link>
         </div>
       </div>
     </footer>
