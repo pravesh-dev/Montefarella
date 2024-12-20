@@ -7,6 +7,7 @@ import GiftSection from './Components/Landing/GiftSection'
 import FeedBack from './Components/Landing/FeedBack'
 import AboutHero from './Components/About/AboutHero'
 import AboutInfo from './Components/About/AboutInfo'
+import Faq from './Components/About/Faq'
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={ <Layout /> }>
           <Route index element={<> <Hero /> <HotelInfo /> <GiftSection /> <FeedBack /> </>} />
-          <Route path='/about' element={<><AboutHero /> <AboutInfo /> </> } />
+          <Route path='/about' element={<><AboutHero /> <AboutInfo /> <Faq /> </> } />
         </Route>
       </Routes>
     </BrowserRouter>
