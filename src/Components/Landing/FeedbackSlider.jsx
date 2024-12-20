@@ -1,9 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 import star from "../../assets/Landing_page_imgs/star.svg";
 import client from "../../assets/Landing_page_imgs/client.png";
 
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+import './FeedbackSlider.css';
+
+// import required modules
+import { Autoplay, Pagination } from 'swiper/modules';
+
 function FeedbackSlider() {
-  const clients = [
+      const clients = [
     {
       img: client,
       startsCount: 5,
@@ -39,13 +50,6 @@ Thanks!`,
     {
       img: client,
       startsCount: 5,
-      para: "Great structure to spend relaxing days as a couple in true Apulian style.",
-      name: "Luca",
-      date: "August 2024",
-    },
-    {
-      img: client,
-      startsCount: 5,
       para: `The Trullo provides the perfect setting for your time in Puglia. The property is beautiful and the outdoor space is stunning for the warmer months.
 It is just a stones throw a way from UNESCO site Alberobello and the Grotte Castellane and a short drive from a number of the key spots in that part of Puglia - Locorotondo, Polignano, Monopoli.
 It was difficult to take full advantage of what the property offered in just a 2 night stay!`,
@@ -71,28 +75,16 @@ we are fully satisfied with the place and can't wait to go back!`,
       date: "August 2024",
     },
   ];
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const goToNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === clients.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  useEffect(() => {
-    const interval = setInterval(goToNext, 4000);
-    return () => clearInterval(interval);
-  }, [currentIndex]);
-
   return (
     <>
-    <div className="w-[97vw] h-auto relative md:w-[45rem] lg:w-[63rem]">
-      {clients.map((client, index) => (
-        <div
+      <Swiper className="mySwiper md:mt-10 lg:mt-20" modules={[Autoplay, Pagination]} autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}>
+        {clients.map((client, index) => (
+        <SwiperSlide
           key={index}
-          className={`w-full min-h-96 absolute top-0 left-1/2 -translate-x-1/2 items-center justify-center transition-opacity duration-1000 ${
-            index === currentIndex ? "flex" : "hidden"
-          }`}
+          className={`w-full flex items-center justify-center transition-opacity duration-1000`}
         >
           <div className="text-center bg-[#2c2b2a] text-white p-4 rounded-lg md:flex md:items-center md:py-2 md:px-3 lg:p-0 overflow-hidden">
             <div className="w-16 h-16 mx-auto rounded-full mb-4 md:w-40 md:h-40 md:rounded-none md:mb-0 flex-shrink-0 overflow-hidden lg:w-60 lg:h-full">
@@ -120,9 +112,9 @@ we are fully satisfied with the place and can't wait to go back!`,
               <p className="text-sm font-mulish italic md:w-full md:text-right">{client.date}</p>
             </div>
           </div>
-        </div>
+        </SwiperSlide>
       ))}
-      <div className="w-full bg-red-700 justify-center gap-3 mt-5 absolute top-80% left-1/2 -translate-x-1/2">
+      {/* <div className="w-full bg-red-700 justify-center gap-3 mt-5 absolute top-80% left-1/2 -translate-x-1/2">
         {clients.map((item, index) => {
           return (
             <span
@@ -133,9 +125,9 @@ we are fully satisfied with the place and can't wait to go back!`,
             ></span>
           );
         })}
-      </div>
-    </div>
-      </>
+      </div> */}
+      </Swiper>
+    </>
   );
 }
 
