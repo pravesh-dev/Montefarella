@@ -14,33 +14,33 @@ function AboutInfo() {
         <h1 className='font-bellefair text-5xl my-2 md:text-6xl lg:text-7xl xl:w-[30rem]'>Enjoy A Luxury Experience</h1>
         <p className='font-poppins text-black/70 text-sm md:w-[23rem] lg:w-[30rem] lg:text-base'>At Trullo Monte Farella, we invite you to experience the perfect blend of tradition and luxury in the heart of Puglia. With breathtaking views, personalized spa treatments, and a serene atmosphere, we provide a truly unique escape. Whether you're here to relax or reconnect, we promise a stay that’s both unforgettable and rejuvenating.
         </p>
-        <div className='flex flex-wrap'>
-            <div className='w-1/2 flex items-center gap-2 mb-3'>
-                <span className='text-4xl text-primary'><FaBell /></span>
+        <div className='flex flex-wrap lg:mt-4'>
+            <div className='w-1/2 flex items-center gap-2 mb-3 lg:w-[40%]'>
+                <span className='text-4xl text-primary lg:text-5xl'><FaBell /></span>
                 <div>
-                    <h2 className='font-bellefair text-xl'>Facility</h2>
-                    <h1 className='font-poppins text-xl text-primary font-bold tracking-wider'>150++</h1>
+                    <h2 className='font-bellefair text-xl lg:text-2xl'>Facility</h2>
+                    <h1 className='font-poppins text-xl text-primary font-bold tracking-wider lg:text-2xl'>150++</h1>
                 </div>
             </div>
-            <div className='w-1/2 flex items-center gap-2 mb-3'>
-                <span className='text-4xl text-primary'><FaBell /></span>
+            <div className='w-1/2 flex items-center gap-2 mb-3 lg:w-[40%]'>
+                <span className='text-4xl text-primary lg:text-5xl'><FaBell /></span>
                 <div>
-                    <h2 className='font-bellefair text-xl'>Facility</h2>
-                    <h1 className='font-poppins text-xl text-primary font-bold tracking-wider'>150++</h1>
+                    <h2 className='font-bellefair text-xl lg:text-2xl'>Facility</h2>
+                    <h1 className='font-poppins text-xl text-primary font-bold tracking-wider lg:text-2xl'>150++</h1>
                 </div>
             </div>
-            <div className='w-1/2 flex items-center gap-2 mb-3'>
-                <span className='text-4xl text-primary'><FaBell /></span>
+            <div className='w-1/2 flex items-center gap-2 mb-3 lg:w-[40%]'>
+                <span className='text-4xl text-primary lg:text-5xl'><FaBell /></span>
                 <div>
-                    <h2 className='font-bellefair text-xl'>Facility</h2>
-                    <h1 className='font-poppins text-xl text-primary font-bold tracking-wider'>150++</h1>
+                    <h2 className='font-bellefair text-xl lg:text-2xl'>Facility</h2>
+                    <h1 className='font-poppins text-xl text-primary font-bold tracking-wider lg:text-2xl'>150++</h1>
                 </div>
             </div>
-            <div className='w-1/2 flex items-center gap-2 mb-3'>
-                <span className='text-4xl text-primary'><FaBell /></span>
+            <div className='w-1/2 flex items-center gap-2 mb-3 lg:w-[40%]'>
+                <span className='text-4xl text-primary lg:text-5xl'><FaBell /></span>
                 <div>
-                    <h2 className='font-bellefair text-xl'>Facility</h2>
-                    <h1 className='font-poppins text-xl text-primary font-bold tracking-wider'>150++</h1>
+                    <h2 className='font-bellefair text-xl lg:text-2xl'>Facility</h2>
+                    <h1 className='font-poppins text-xl text-primary font-bold tracking-wider lg:text-2xl'>150++</h1>
                 </div>
             </div>
         </div>
