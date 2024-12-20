@@ -7,28 +7,28 @@ function FaqData() {
 
     const data = [
         {
-            ques: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
-            ans: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam magni architecto eos pariatur, labore id et ullam rerum, sit molestias ipsam odio voluptatum, reiciendis illo.`,
+            ques: `How to get to the spa from the nearest airport?`,
+            ans: `The nearest airport is Bari Karol Wojtyła Airport (BRI), located about an hour's drive away. Transfers can be arranged upon request`,
         },
         {
-            ques: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
-            ans: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam magni architecto eos pariatur, labore id et ullam rerum, sit molestias ipsam odio voluptatum, reiciendis illo.`,
+            ques: `Is the property pet-friendly?`,
+            ans: `Small pets are welcome, under the careful control of the owners, in order to respect the venue`,
         },
         {
-            ques: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
-            ans: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam magni architecto eos pariatur, labore id et ullam rerum, sit molestias ipsam odio voluptatum, reiciendis illo.`,
+            ques: `Do you offer Wi-Fi?`,
+            ans: `Yes, we provide free Wi-Fi throughout the property.`,
         },
         {
-            ques: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
-            ans: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam magni architecto eos pariatur, labore id et ullam rerum, sit molestias ipsam odio voluptatum, reiciendis illo.`,
+            ques: `What dining options are available?`,
+            ans: `Our property comes with a small but fully-equipped kitchen. There are also excellent dining options in the nearby towns of Castellana Grotte and Putignano.`,
         },
         {
-            ques: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
-            ans: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam magni architecto eos pariatur, labore id et ullam rerum, sit molestias ipsam odio voluptatum, reiciendis illo.`,
+            ques: `Are room upgrades available?`,
+            ans: `Please contact us for more information regarding room upgrades and premium packages.`,
         },
         {
-            ques: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
-            ans: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam magni architecto eos pariatur, labore id et ullam rerum, sit molestias ipsam odio voluptatum, reiciendis illo.`,
+            ques: `What about parking?`,
+            ans: `Free private parking located inside the property is available on-site, including a charging station for electric vehicles.`,
         }
     ]
   return (
