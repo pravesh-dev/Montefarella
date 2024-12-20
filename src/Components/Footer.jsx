@@ -1,27 +1,35 @@
 import React from "react";
 import logo from '/logo.png'
+import { FaAngleRight } from "react-icons/fa6";
+import { FaTwitter, FaFacebookF, FaInstagram, FaPinterest, FaLinkedinIn } from "react-icons/fa";
+
 function Footer() {
   return (
-    <footer className="bg-gray-800 text-gray-300 py-8">
+    <footer className="bg-[#2c2b2b] text-gray-300 py-8 md:px-5 lg:px-16">
+      <div className="md:flex items-center justify-between md:gap-10">
       {/* Footer Logo Section */}
-      <div className="text-center mb-8 flex flex-col">
+      <div className="mb-8 flex flex-col items-center md:items-start">
+        <div className="md:flex">
         <img
           src={logo}
           alt="Imperial Grand Hotel Logo"
           className="w-12 h-12 mx-auto mb-4"
-        />
+          />
+        <div className="flex flex-col">
         <span className="text-[1.15rem] md:text-2xl uppercase font-bellefair">Montefarella</span>
             <span className="text-[0.5rem] md:text-[0.75rem] ml-1 tracking-[3px] text-white/90 uppercase font-mulish">
               Luxury Trullo & Spa
             </span>
-        <p className="text-sm text-gray-400 mt-2 font-poppins">
+        </div>
+        </div>
+        <p className="text-sm text-gray-400 text-center mt-2 font-poppins w-80 md:text-left">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
 
       {/* Useful Links Section */}
-      <div className="text-center mb-8">
+      <div className="text-center mb-8 md:text-left">
         <h2 className="text-lg font-semibold text-primary mb-2">
           USEFUL LINKS
         </h2>
@@ -50,50 +58,52 @@ function Footer() {
       </div>
 
       {/* Subscribe Section */}
-      <div className="text-center mb-8">
+      <div className="text-center mb-8 md:w-72 md:text-left">
         <h2 className="text-lg font-semibold text-primary mb-2">
           SUBSCRIBE
         </h2>
         <p className="text-sm text-gray-400 mb-4">
           Don't miss to subscribe to our news, kindly fill the form below.
         </p>
-        <form className="flex justify-center items-center space-x-2">
+        <form className="h-10 flex justify-center items-center md:justify-start">
           <input
             type="email"
             placeholder="Your Email Address"
-            className="px-4 py-2 rounded-lg text-gray-700 focus:outline-none focus:ring focus:ring-primary"
+            className="h-full pl-3 text-primary placeholder:text-primary bg-black/20 focus:outline-none focus:ring-primary"
           />
-          <button className="px-4 py-2 bg-primring-primary text-white rounded-lg hover:bg-primring-primary">
-            <i className="fas fa-arrow-right"></i>
+          <button className="w-10 h-full bg-primary text-white flex justify-center items-center">
+            <FaAngleRight />
           </button>
         </form>
       </div>
-
+      </div>
       {/* Social Links Section */}
-      <div className="text-center mb-8">
+      <div className="text-center mb-8 flex items-center justify-center gap-4 md:justify-between">
+        <span className="w-14 h-[1.5px] bg-white/50 md:w-60 lg:w-80 xl:w-[30rem]"></span>
         <div className="flex justify-center space-x-4">
-          <a href="#" className="text-gray-300 hover:text-yellow-500">
-            <i className="fab fa-twitter"></i>
+          <a href="#" className="text-gray-300 hover:text-primary border-2 border-gray-300 rounded-full p-1">
+            <FaTwitter />
           </a>
-          <a href="#" className="text-gray-300 hover:text-yellow-500">
-            <i className="fab fa-facebook-f"></i>
+          <a href="#" className="text-gray-300 hover:text-primary border-2 border-gray-300 rounded-full p-1">
+            <FaFacebookF />
           </a>
-          <a href="#" className="text-gray-300 hover:text-yellow-500">
-            <i className="fab fa-instagram"></i>
+          <a href="#" className="text-gray-300 hover:text-primary border-2 border-gray-300 rounded-full p-1">
+            <FaInstagram />
           </a>
-          <a href="#" className="text-gray-300 hover:text-yellow-500">
-            <i className="fab fa-pinterest"></i>
+          <a href="#" className="text-gray-300 hover:text-primary border-2 border-gray-300 rounded-full p-1">
+            <FaPinterest />
           </a>
-          <a href="#" className="text-gray-300 hover:text-yellow-500">
-            <i className="fab fa-linkedin-in"></i>
+          <a href="#" className="text-gray-300 hover:text-primary border-2 border-gray-300 rounded-full p-1">
+            <FaLinkedinIn />
           </a>
         </div>
+        <span className="w-14 h-[1.5px] bg-white/50 md:w-60 lg:w-80 xl:w-[30rem]"></span>
       </div>
 
       {/* Footer Bottom Section */}
-      <div className="text-center text-sm text-gray-500">
+      <div className="text-center text-sm text-gray-500 md:flex items-center justify-between">
         <p>&copy; 2023 Imperial Grand Hotel. All Rights Reserved.</p>
-        <div className="space-x-2 mt-2">
+        <div className="space-x-2 mt-2 md:mt-0 md:space-x-10">
           <a href="#" className="hover:text-yellow-500">
             Privacy Policy
           </a>
