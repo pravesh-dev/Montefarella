@@ -10,6 +10,7 @@ import AboutInfo from './Components/About/AboutInfo'
 import Faq from './Components/About/Faq'
 import ContactHero from './Components/Contact/ContactHero'
 import ContactInfo from './Components/Contact/ContactInfo'
+import BookingHero from './Components/Booking/BookingHero'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route index element={<> <Hero /> <HotelInfo /> <GiftSection /> <FeedBack /> </>} />
           <Route path='/about' element={<><AboutHero /> <AboutInfo /> <Faq /> </> } />
           <Route path='/contact' element={<><ContactHero/> <ContactInfo /> </> } />
+          <Route path='/booking' element={<><BookingHero /> </> } />
         </Route>
       </Routes>
     </BrowserRouter>
