@@ -6,6 +6,7 @@ import HotelInfo from './Components/Landing/HotelInfo'
 import GiftSection from './Components/Landing/GiftSection'
 import FeedBack from './Components/Landing/FeedBack'
 import AboutHero from './Components/About/AboutHero'
+import AboutInfo from './Components/About/AboutInfo'
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={ <Layout /> }>
           <Route index element={<> <Hero /> <HotelInfo /> <GiftSection /> <FeedBack /> </>} />
-          <Route path='/about' element={<AboutHero />} />
+          <Route path='/about' element={<><AboutHero /> <AboutInfo /> </> } />
         </Route>
       </Routes>
     </BrowserRouter>
