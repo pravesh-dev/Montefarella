@@ -114,18 +114,6 @@ we are fully satisfied with the place and can't wait to go back!`,
           </div>
         </SwiperSlide>
       ))}
-      {/* <div className="w-full bg-red-700 justify-center gap-3 mt-5 absolute top-80% left-1/2 -translate-x-1/2">
-        {clients.map((item, index) => {
-          return (
-            <span
-              key={index}
-              className={`${
-                index === currentIndex ? "bg-primary scale-125" : "bg-black"
-              } w-3 h-3 rounded-full duration-200`}
-            ></span>
-          );
-        })}
-      </div> */}
       </Swiper>
     </>
   );

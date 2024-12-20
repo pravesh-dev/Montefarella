@@ -28,7 +28,7 @@ function BookingInfo() {
         </div>
         <p className='text-center font-bellefair text-xl my-8'>with prosecco and rose petals or balloons</p>
         <p className='font-bellefair text-3xl text-center'>Total Cost: <span className='text-primary ml-3'>$200</span></p>
-        <button className='w-full font-poppins capitalize italic text-primary border-t-2 border-b-2 border-primary text-sm py-1 px-7 my-5 lg:my-7 lg:text-base'>Reserve your stay ›</button>
+        <button className='w-full font-poppins capitalize italic text-primary border-t-2 border-b-2 border-primary text-sm py-1 px-7 my-5 lg:my-7 lg:text-xl lg:py-2'>Reserve your stay ›</button>
       </form>
       <div className='md:w-[70%] lg:mr-10 lg:w-[55%]'>
         <h1 className='font-bellefair text-4xl mt-8 mb-3 lg:text-6xl'>Superior Suite</h1>

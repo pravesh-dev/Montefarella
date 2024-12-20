@@ -12,13 +12,14 @@ import ContactHero from './Components/Contact/ContactHero'
 import ContactInfo from './Components/Contact/ContactInfo'
 import BookingHero from './Components/Booking/BookingHero'
 import BookingInfo from './Components/Booking/BookingInfo'
+import GallerySection from './Components/Landing/GallerySection'
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={ <Layout /> }>
-          <Route index element={<> <Hero /> <HotelInfo /> <GiftSection /> <FeedBack /> </>} />
+          <Route index element={<> <Hero /> <HotelInfo /> <GiftSection /> <GallerySection /> <FeedBack /> </>} />
           <Route path='/about' element={<><AboutHero /> <AboutInfo /> <Faq /> </> } />
           <Route path='/contact' element={<><ContactHero/> <ContactInfo /> </> } />
           <Route path='/booking' element={<><BookingHero /> <BookingInfo /> </> } />

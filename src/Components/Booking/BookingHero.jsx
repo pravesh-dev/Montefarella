@@ -12,7 +12,7 @@ function BookingHero() {
   }, [currentImage, images.length]);
 
   return (
-    <div className='w-full h-96 relative bg-teal-900 lg:h-72'>
+    <div className='w-full h-96 relative bg-teal-900 lg:h-96'>
         <img src={images[currentImage]} className="w-full h-full object-cover" alt="background images" />
     <div className="flex justify-center gap-3 mt-5 absolute bottom-3 left-1/2 -translate-x-1/2">
       {

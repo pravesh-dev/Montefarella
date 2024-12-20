@@ -38,7 +38,7 @@ function Header() {
             ABOUT
           </Link>
           <Link
-            className={`w-full py-3 bg-[#c095691b] text-center nav_items ${location.pathname === '/service' ? 'text-primary' : 'hover:text-primary'} tracking-[1px] border-b-2 ${location.pathname === '/service' ? 'border-primary' : 'border-transparent'} md:w-auto md:py-0 md:bg-transparent md:border-none`}
+            className={`w-full py-3 bg-[#c095691b] text-center nav_items ${location.pathname === '/booking' ? 'text-primary' : 'hover:text-primary'} tracking-[1px] border-b-2 ${location.pathname === '/booking' ? 'border-primary' : 'border-transparent'} md:w-auto md:py-0 md:bg-transparent md:border-none`}
             to="/booking"
           >
             SERVICE
