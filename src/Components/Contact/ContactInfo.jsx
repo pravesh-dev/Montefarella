@@ -2,21 +2,12 @@ import React from 'react';
 import { TfiEmail } from "react-icons/tfi";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { MdCall } from "react-icons/md";
-import ContactMap from './ContactMap';
 
 function ContactInfo() {
   return (
     <section className='w-full h-auto bg-white px-1 pt-52 flex flex-col gap-3 md:flex-row md:justify-center md:gap-14 md:pt-28 md:h-[110vh] lg:h-[120vh] lg:pt-36 lg:justify-between lg:gap-0 lg:px-28 xl:px-40 xl:h-[110vh]'>
       <div className='w-full h-80 bg-gray-900 flex-shrink-0 md:w-80 md:h-[33rem] lg:w-96 lg:h-[35rem] xl:w-[28rem] map'>
-      <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3429.6396275809248!2d76.1171510753702!3d28.04460097599097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3912b5daad9ce3f7%3A0xab351ba284d2935c!2sP%20G%20College%20Narnaul!5e1!3m2!1sen!2sin!4v1734692729172!5m2!1sen!2sin"
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.4153064793004!2d17.134382476033693!3d40.87225497136988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1347b7841220e311%3A0xe3025439ddc5b71b!2sLuxury%20Suite%20%26%20Spa%20Trullo%20Monte%20Farella!5e1!3m2!1sen!2sin!4v1734693146897!5m2!1sen!2sin" width="100%" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div className='py-4 md:w-[45%] lg:-[50%]'>
         <span className="w-[2px] inline-block h-16 bg-primary/50 mb-4 md:mb-5"></span>
