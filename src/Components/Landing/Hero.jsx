@@ -6,13 +6,20 @@ import { FaAngleRight } from "react-icons/fa6";
 import HotelBook from './HotelBook';
 
 function Hero() {
+  const [currentImage, setCurrentImage] = useState(0);
+  const images = [bgImage, "/image2.jpg", "/image3.jpg"];
+
+  const handleImageChange = (direction) => {
+    if (direction === 'next') {
+      setCurrentImage((currentImage + 1) % images.length);
+    } else if (direction === 'prev') {
+      setCurrentImage((currentImage - 1 + images.length) % images.length);
+    }
+  };
+
   return (
     <section className='relative'>
-      <img
-        alt="Hotel Room Background"
-        className="w-full h-screen object-cover"
-        src={bgImage}
-      />
+      <img src={images[currentImage]} className="w-full h-screen object-cover" alt="background images" />
       <div
         className="absolute inset-0 flex flex-col justify-center items-start px-3 md:px-10 lg:px-24 bg-black/50"
       >
@@ -59,11 +66,13 @@ function Hero() {
         <div className="flex space-x-6">
           <button
             className="w-12 h-12 text-xs flex items-center justify-center border-2 border-white/70 text-white/70 rounded-full"
+            onClick={() => handleImageChange('prev')}
           >
             <FaChevronLeft />
           </button>
           <button
             className="w-12 h-12 text-xs flex items-center justify-center border-2 border-white/70 text-white/70 rounded-full"
+            onClick={() => handleImageChange('next')}
           >
             <FaAngleRight />
           </button>
