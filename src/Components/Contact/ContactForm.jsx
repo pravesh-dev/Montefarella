@@ -9,7 +9,7 @@ function ContactForm() {
       <input type='text' className="w-full pl-3 font-poppins py-1 text-primary placeholder:text-primary border-none outline-none bg-[#3e3c3d]" placeholder='Your email here' />
       <h2 className='font-bellefair text-base lg:text-xl mt-4 lg:mt-8'>Message</h2>
       <textarea name="" className='w-full h-24 lg:h-36 pl-3 font-poppins py-1 text-primary placeholder:text-primary border-none outline-none bg-[#3e3c3d] resize-none' placeholder='Enter message here'></textarea>
-      <button className='font-serif italic text-primary text-sm lg:text-base mt-6 lg:mt-10 w-full text-center'>Check Availability ›</button>
+      <button className='font-serif italic text-primary text-sm lg:text-base mt-6 lg:mt-10 w-full text-center'>Connect with Us ›</button>
     </div>
   )
 }
